@@ -253,12 +253,12 @@ const hoursToSeconds = (hours) => {
     return hours * 60 * 60;
 }
 
-const time = 2000 //hoursToSeconds(2);
+const time = hoursToSeconds(2);
 
 const fetchTask1 = () => {
     setInterval(() => {
         const fetchData = async () => {
-            const response = await fetch("http://localhost:3000/task1");
+            const response = await fetch("https://api-charan-ganeshs-projects.vercel.app/task1");
             const data = await response.json();
             if (response.success == false) {
                 console.log("Error");
@@ -271,7 +271,7 @@ const fetchTask1 = () => {
     }, time)
 }
 
-// fetchTask1();
+fetchTask1();
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
