@@ -271,7 +271,7 @@ const fetchTask1 = () => {
     }, time)
 }
 
-fetchTask1();
+// fetchTask1();
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
