@@ -4,7 +4,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node script.js"
+    "start": "node script.js",
+    "build": "echo \"Error: no build specified\" && exit 1"
   },
   "author": "charanganeshsingupuram",
   "license": "MIT",
