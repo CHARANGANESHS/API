@@ -25,7 +25,7 @@ const standardDeviation = (arr) => {
 
     let sum = 0;
     let mean = 0;
-    let n = arr.length;
+    let n = arr.length > 100 ? 100 : arr.length;
     for (let i = 0; i < n; i++) {
         sum += arr[i]
     }
